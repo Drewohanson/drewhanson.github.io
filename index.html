@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<!--
+============================================
+; Title:  drewhanson.github.io
+; Author: Drew Hanson
+; Date:   13  March 2019
+; Description:Github hosted portfolio for WebDev program
+;===========================================
+ -->
+ 
+ <!DOCTYPE html>
 <html lang="en"> 
     <head>
 
@@ -9,29 +18,126 @@
         <meta name="author" content="Drew Hanson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">    
+        <script src="main.js"></script>
             <title>Drew Hanson</title>
 
+            <style>
+                div.gallery {
+                  border: 1px solid #ccc;
+                }
+                
+                div.gallery:hover {
+                  border: 1px solid #777;
+                }
+                
+                div.gallery img {
+                  width: 100%;
+                  height: auto;
+                }
+                
+                div.desc {
+                  padding: 15px;
+                  text-align: center;
+                }
+                
+                * {
+                  box-sizing: border-box;
+                }
+                
+                .responsive {
+                  padding: 0 6px;
+                  float: left;
+                  width: 24.99999%;
+                }
+                
+                @media only screen and (max-width: 700px) {
+                  .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                  }
+                }
+                
+                @media only screen and (max-width: 500px) {
+                  .responsive {
+                    width: 100%;
+                  }
+                }
+                
+                .clearfix:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+                </style>
     </head>
   <body>
-    <h1>Catch the wave and check out my work </h1>
+
+      <!-- Start jumbotron -->
+      <div class="jumbotron .jumbotron-fluid">
+          <h1>DREW HANSON</h1>
+        </div>
+        <!-- End Jumbotron -->
+    
+        <!-- Start About me -->
+    
+        <div class="aboutMe">
+          <img
+            class=""
+            src="images/drew.jpg"
+            alt="drewhanson"  width="500" height="300"1
+          />
+          <img
+          class=""
+          src="images/family.jpg"
+          alt="drewhanson"  width="500" height="300"1
+        />
+
+    <h2>About Me: Let me "tide" you a little about myself</h2>
+    <p>My Name is Drew Hanson.  I enjoy swimming, wakeboarding, camping, vacations (hey who doesn't) as well as most outdoor activies. I Graduated from the University of Utah with a  degree in Communication Studies. I am working towards my second Bachelors degree in Software and Web development and design. I am really enjoying all that I am learning and not only looking forward to learning more, but learning how I can help others along the way.  </p>
+
+    <h2>Catch the wave and check out my work </h2>
     <ul>HTML/CSS</ul>
     <ul>JavaScript</ul>
     <ul>Node.js</ul>
-    <h1>Reasons why you should choose Drew</h1>
     <ul>FullStack developer</ul>
     <ul>Creative</ul>
-    <ul>personalized website(s)</ul>
-    
-    <h1>About Me: Let me "tide" you a little about myself</h1>
-    <p>My Name is Drew Hanson.  I enjoy swimming, wakeboarding, camping, vacations (hey who does'nt) as well as most outdoor activies. I Graduated from the University of Utah with a communication Studies degree. and am working towards my second Bachelors degree in Web development. I am really enjoying all that I am learning and not only looking forward to learning more, but learning how I can help others along the way.  </p>
+    <ul>Personalized website(s)</ul>       
+        
+        <div class="responsive">
+          <div class="gallery">
+            <img src="images/biosite.PNG" alt="biosite" width="600" height="400">
+            <a target="_blank" href="https://drewohanson.github.io/bioSite">Biography Webpage</a>
+        </div>
+        </div>
 
-    <a href="https://drewohanson.github.io/bioSite/">biosite</a>.
-    <a href="https://github.com/Drewohanson/bioSite">biosite Prototype</a>.
-    <a href="https://github.com/Drewohanson/web-231">Web230/231</a>.
-    <a href="https://github.com/Drewohanson/drewhanson.github.io">portfolio Prototype</a>.
-    <a href="https://github.com/Drewohanson/web-330">Web330</a>.
+        <div class="responsive">
+          <div class="gallery">
+            <img src="images/biositerepository.png"alt="biosite" width="600" height="400">
+            <a href="https://github.com/Drewohanson/bioSite">Biography Website Prototype</a>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+              <img src="images/web231repo.png"alt="web230/231" width="600" height="400">
+             <a href="https://github.com/Drewohanson/web-231">Web230/231</a>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+              <img src="images/portfolioporto.png" alt="portfolio" width="600" height="400">
+             <a href="https://github.com/Drewohanson/drewhanson.github.io">Portfolio Prototype</a>
+          </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="images/web330repo.png" alt="portfolio" width="600" height="400">
+                <a href="https://github.com/Drewohanson/web-330">Web330</a>
+            </div>
+          </div>
+        
+        <div class="clearfix"></div>
+    
   </body>
 </html>
