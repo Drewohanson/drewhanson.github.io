@@ -2,7 +2,7 @@
 ============================================
 ; Title:  drewhanson.github.io
 ; Author: Drew Hanson
-; Date:   13  March 2019
+; Date:   23  March 2019
 ; Description:Github hosted portfolio for WebDev program
 ;===========================================
  -->
@@ -10,8 +10,8 @@
  <!DOCTYPE html>
 <html lang="en"> 
     <head>
-
-        <meta name="viewport"content="width=device-width, inital-scale=1.0">
+      <title>Drew Hanson Profile </title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <meta charset="UTF-8">
         <meta name="description" content="portfolio">
         <meta name="keywords" content="Drew Hanson">
@@ -20,124 +20,196 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">    
+        <!-- Load font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="main.js"></script>
-            <title>Drew Hanson</title>
-
-            <style>
-                div.gallery {
-                  border: 1px solid #ccc;
-                }
-                
-                div.gallery:hover {
-                  border: 1px solid #777;
-                }
-                
-                div.gallery img {
-                  width: 100%;
-                  height: auto;
-                }
-                
-                div.desc {
-                  padding: 15px;
-                  text-align: center;
-                }
-                
-                * {
-                  box-sizing: border-box;
-                }
-                
-                .responsive {
-                  padding: 0 6px;
-                  float: left;
-                  width: 24.99999%;
-                }
-                
-                @media only screen and (max-width: 700px) {
-                  .responsive {
-                    width: 49.99999%;
-                    margin: 6px 0;
-                  }
-                }
-                
-                @media only screen and (max-width: 500px) {
-                  .responsive {
-                    width: 100%;
-                  }
-                }
-                
-                .clearfix:after {
-                  content: "";
-                  display: table;
-                  clear: both;
-                }
-                </style>
-    </head>
+     </head>
   <body>
-
-      <!-- Start jumbotron -->
-      <div class="jumbotron .jumbotron-fluid">
-          <h1>DREW HANSON</h1>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image" src="images/drew.jpg" alt="Drew Hanson"  width="500" height="300"
+            />
+            <img class="" src="images/family.jpg" alt="family"  width="500" height="300"
+        />
+            <div class="profile-content float-left">
+                <h1 class="name">Drew Hanson</h1>
+                <h2 class="desc">Web App Developer</h2>   
+                
+            </div><!--//profile-->
+      <!-- The social media icon bar -->
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
         </div>
-        <!-- End Jumbotron -->
-    
-        <!-- Start About me -->
+            <a class="btn btn-cta-primary float-right" href="contact me link to be added" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+            <!-- Start About me -->
     
         <div class="aboutMe">
-          <img
-            class=""
-            src="images/drew.jpg"
-            alt="drewhanson"  width="500" height="300"1
-          />
-          <img
-          class=""
-          src="images/family.jpg"
-          alt="drewhanson"  width="500" height="300"1
-        />
+         
 
-    <h2>About Me: Let me "tide" you a little about myself</h2>
+    <h2>About Me</h2>
     <p>My Name is Drew Hanson.  I enjoy swimming, wakeboarding, camping, vacations (hey who doesn't) as well as most outdoor activies. I Graduated from the University of Utah with a  degree in Communication Studies. I am working towards my second Bachelors degree in Software and Web development and design. I am really enjoying all that I am learning and not only looking forward to learning more, but learning how I can help others along the way.  </p>
+   
+  <section class="latest section">
+      <div class="section-inner">
+          <h2 class="heading">Latest Projects</h2>
+          <div class="content">    
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
 
-    <h2>Catch the wave and check out my work </h2>
-    <ul>HTML/CSS</ul>
-    <ul>JavaScript</ul>
-    <ul>Node.js</ul>
-    <ul>FullStack developer</ul>
-    <ul>Creative</ul>
-    <ul>Personalized website(s)</ul>       
-        
-        <div class="responsive">
-          <div class="gallery">
-            <img src="images/biosite.PNG" alt="biosite" width="600" height="400">
-            <a target="_blank" href="https://drewohanson.github.io/bioSite">Biography Webpage</a>
-        </div>
-        </div>
-
-        <div class="responsive">
-          <div class="gallery">
-            <img src="images/biositerepository.png"alt="biosite" width="600" height="400">
-            <a href="https://github.com/Drewohanson/bioSite">Biography Website Prototype</a>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-              <img src="images/web231repo.png"alt="web230/231" width="600" height="400">
-             <a href="https://github.com/Drewohanson/web-231">Web230/231</a>
-          </div>
-        </div>
-        <div class="responsive">
-          <div class="gallery">
-              <img src="images/portfolioporto.png" alt="portfolio" width="600" height="400">
-             <a href="https://github.com/Drewohanson/drewhanson.github.io">Portfolio Prototype</a>
-          </div>
-        </div>
-        <div class="responsive">
-            <div class="gallery">
-                <img src="images/web330repo.png" alt="portfolio" width="600" height="400">
-                <a href="https://github.com/Drewohanson/web-330">Web330</a>
-            </div>
-          </div>
-        
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+             <div class="numbertext">1 / 5</div>
+             <div class="responsive">
+                <div class="gallery">
+                    <a href="https://drewohanson.github.io/bioSite">
+                        <img src="images/biosite.png" alt="biosite" style="width:400px;height:350px;border:0;">
+                      </a>
+                     <p class="summary">Biography webpage created for Rebecka Hanson</p>
+                </div><!--//desc-->                          
+             </div><!--//item-->
+             </div>
+             <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <div class="responsive">
+                   <div class="gallery">
+                      <a href="https://github.com/Drewohanson/bioSite">
+                        <img src="images/biositerepository.png" alt="biosite Repository" style="width:400px;height:350px;border:0;">
+                      </a>
+                    <p class="summary">Biography webpage prototype created for Rebecka Hanson</p>
+                   </div><!--//desc-->                          
+                </div><!--//item-->
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <div class="responsive">
+                       <div class="gallery">
+                          <a href="https://github.com/Drewohanson/drewhanson.github.io">
+                            <img src="images/portfolioporto.png" alt="Portfolio Prototype" style="width:400px;height:350px;border:0;">
+                          </a>
+                          <p class="summary">Portfolio Prototype</p>
+                       </div><!--//desc-->                          
+                    </div><!--//item-->
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <div class="responsive">
+                           <div class="gallery">
+                              <a href="https://github.com/Drewohanson/web-231">
+                                <img src="images/web231repo.png" alt=" Repository for web-231" style="width:400px;height:350px;border:0;">
+                              </a>
+                             <p class="summary">Repository for Web 230/231</p>
+                           </div><!--//desc-->                          
+                        </div><!--//item-->
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <div class="responsive">
+                               <div class="gallery">
+                                  <a href="https://github.com/Drewohanson/web-330">
+                                    <img src="images/web330repo.png" alt="Web 330 Repository" style="width:400px;height:350px;border:0;">
+                                  </a>
+                                  <p class="summary">Web 330 Repository</p>
+                               </div><!--//desc-->                          
+                            </div><!--//item-->
+                            </div>
+                   <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+  
+             <!-- The dots/circles -->
+              <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                 <span class="dot" onclick="currentSlide(2)"></span> 
+                 <span class="dot" onclick="currentSlide(3)"></span> 
+                 <span class="dot" onclick="currentSlide(4)"></span>
+                 <span class="dot" onclick="currentSlide(5)"></span>
+              </div>  
+            
+          </div><!--//content-->  
+      </div><!--//section-inner-->                
+  </section><!--//section-->
+</div><!--//primary-->     
         <div class="clearfix"></div>
-    
+          <aside class="info aside section">
+             <div class="section-inner">
+                 <h2 class="heading sr-only">Basic Information</h2>
+                 <div class="content">
+                     <ul class="list-unstyled">
+                         <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Salt Lake City, Utah, US</li>
+                         <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="drew.o.hanson@gmail.com">drew.o.hanson@gmail.com</a></li>
+                         <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://drewohanson.github.io/drewhanson.github.io/">https://drewohanson.github.io/drewhanson.github.io/</a></li>
+                     </ul>
+                 </div><!--//content-->  
+             </div><!--//section-inner-->                 
+         </aside><!--//aside-->
+         <aside class="skills aside section">
+          <div class="section-inner">
+              <h2 class="heading">Skills</h2>
+              <div class="content">
+                  <p class="intro">
+                      Skilled in:</p>
+                  
+                  <div class="skillset">
+                     
+                      <div class="item">
+                          <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                          <div class="level-bar">
+                              <div class="level-bar-inner" data-level="96%">
+                              </div>                                      
+                          </div><!--//level-bar-->                                 
+                      </div><!--//item-->
+                      
+                      <div class="item">
+                          <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                          <div class="level-bar">
+                              <div class="level-bar-inner" data-level="96%">
+                              </div>                                      
+                          </div><!--//level-bar-->                                 
+                      </div><!--//item-->
+                      
+                      <div class="item">
+                          <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                          <div class="level-bar">
+                              <div class="level-bar-inner" data-level="96%">
+                              </div>                                      
+                          </div><!--//level-bar-->                                 
+                      </div><!--//item-->
+                      
+                      <div class="item">
+                          <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
+                          <div class="level-bar">
+                              <div class="level-bar-inner" data-level="85%">
+                              </div>                                      
+                          </div><!--//level-bar-->                                 
+                      </div><!--//item-->
+                  </div>              
+              </div><!--//content-->  
+          </div><!--//section-inner-->                 
+      </aside><!--//section-->
+      <aside class="education aside section">
+        <div class="section-inner">
+            <h2 class="heading">Education</h2>
+            <div class="content">
+                <div class="item">                      
+                    <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Web Design and Development</h3>
+                    <h4 class="university">Bellevue University <span class="year">(2019)</span></h4>
+                </div><!--//item-->
+                <div class="item">
+                    <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Commmunication</h3>
+                    <h4 class="university">University of Utah <span class="year">(2014)</span></h4>
+                </div><!--//item-->
+            </div><!--//content-->
+        </div><!--//section-inner-->
+    </aside><!--//section-->
   </body>
 </html>
+
