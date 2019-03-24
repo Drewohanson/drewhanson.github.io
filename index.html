@@ -22,15 +22,23 @@
         <link rel="stylesheet" type="text/css" href="style.css">    
         <!-- Load font awesome icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--refernce javascript-->
         <script src="main.js"></script>
+          <!-- Bootstrap styling -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
      </head>
   <body>
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container clearfix">                       
-            <img class="profile-image" src="images/drew.jpg" alt="Drew Hanson"  width="500" height="300"
+            <img class="profile-image" src="images/drew.jpg" alt="Drew Hanson"  width="600" height="400"
             />
-            <img class="" src="images/family.jpg" alt="family"  width="500" height="300"
+           
         />
             <div class="profile-content float-left">
                 <h1 class="name">Drew Hanson</h1>
@@ -55,76 +63,104 @@
 
     <h2>About Me</h2>
     <p>My Name is Drew Hanson.  I enjoy swimming, wakeboarding, camping, vacations (hey who doesn't) as well as most outdoor activies. I Graduated from the University of Utah with a  degree in Communication Studies. I am working towards my second Bachelors degree in Software and Web development and design. I am really enjoying all that I am learning and not only looking forward to learning more, but learning how I can help others along the way.  </p>
-   
-  <section class="latest section">
+   </div>
+  <section class="latest section"></section>
       <div class="section-inner">
           <h2 class="heading">Latest Projects</h2>
           <div class="content">    
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
-
-              <!-- Full-width images with number and caption text -->
-              <div class="mySlides fade">
-             <div class="numbertext">1 / 5</div>
-             <div class="responsive">
-                <div class="gallery">
-                    <a href="https://drewohanson.github.io/bioSite">
-                        <img src="images/biosite.png" alt="biosite" style="width:400px;height:350px;border:0;">
-                      </a>
-                     <p class="summary">Biography webpage created for Rebecka Hanson</p>
-                </div><!--//desc-->                          
-             </div><!--//item-->
-             </div>
-             <div class="mySlides fade">
-                <div class="numbertext">2 / 5</div>
-                <div class="responsive">
-                   <div class="gallery">
-                      <a href="https://github.com/Drewohanson/bioSite">
-                        <img src="images/biositerepository.png" alt="biosite Repository" style="width:400px;height:350px;border:0;">
-                      </a>
-                    <p class="summary">Biography webpage prototype created for Rebecka Hanson</p>
-                   </div><!--//desc-->                          
-                </div><!--//item-->
+            
+              <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="4000"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleCaptions"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://drewohanson.github.io/bioSite">
+                    <img src="images/biosite.png" alt="biosite" class="d-block w-100">
+                 <div class="carousel-caption d-none d-md-block">
+                      <p class="summary">Biography webpage created for Rebecka Hanson</p>
+                    </div>
+                  </a>
                 </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <div class="responsive">
-                       <div class="gallery">
-                          <a href="https://github.com/Drewohanson/drewhanson.github.io">
-                            <img src="images/portfolioporto.png" alt="Portfolio Prototype" style="width:400px;height:350px;border:0;">
-                          </a>
-                          <p class="summary">Portfolio Prototype</p>
-                       </div><!--//desc-->                          
-                    </div><!--//item-->
+                <div class="carousel-item">
+                  <a href="https://github.com/Drewohanson/bioSite">
+                    <img src="images/biositerepository.png" alt="biosite Repository"
+                      class="d-block w-100"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Repository for Rebecka Hanson bioSite project</p>
                     </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 5</div>
-                        <div class="responsive">
-                           <div class="gallery">
-                              <a href="https://github.com/Drewohanson/web-231">
-                                <img src="images/web231repo.png" alt=" Repository for web-231" style="width:400px;height:350px;border:0;">
-                              </a>
-                             <p class="summary">Repository for Web 230/231</p>
-                           </div><!--//desc-->                          
-                        </div><!--//item-->
-                        </div>
-                        <div class="mySlides fade">
-                            <div class="numbertext">5 / 5</div>
-                            <div class="responsive">
-                               <div class="gallery">
-                                  <a href="https://github.com/Drewohanson/web-330">
-                                    <img src="images/web330repo.png" alt="Web 330 Repository" style="width:400px;height:350px;border:0;">
-                                  </a>
-                                  <p class="summary">Web 330 Repository</p>
-                               </div><!--//desc-->                          
-                            </div><!--//item-->
-                            </div>
-                   <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/Drewohanson/web-231">
+                      <img src="images/web231repo.png"
+                      class="d-block w-100"
+                      alt="Image of code related to Web-231 class"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Web-231 Repository</p>
+                      </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/Drewohanson/drewhanson.github.io">
+                      <img src="images/portfolioporto.png"
+                      class="d-block w-100"
+                      alt="Image of portfolio wireframe"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                     <p>Repository for this Portfolio page.</p>
                     </div>
-                    <br>
-  
+                  </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://github.com/Drewohanson/web-330">
+                      <img src="images/web330repo.png"
+                      class="d-block w-100"
+                      alt="Picture of code related to the Web-330 class"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Web-330 Repository</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleCaptions"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleCaptions"
+                role="button"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+ 
              <!-- The dots/circles -->
               <div style="text-align:center">
                   <span class="dot" onclick="currentSlide(1)"></span> 
@@ -133,10 +169,7 @@
                  <span class="dot" onclick="currentSlide(4)"></span>
                  <span class="dot" onclick="currentSlide(5)"></span>
               </div>  
-            
-          </div><!--//content-->  
-      </div><!--//section-inner-->                
-  </section><!--//section-->
+
 </div><!--//primary-->     
         <div class="clearfix"></div>
           <aside class="info aside section">
